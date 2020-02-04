@@ -15,46 +15,66 @@ struct ContentView: View {
             Color.green
                 .edgesIgnoringSafeArea(.all)
         VStack{
-        Text("Band Audition Sorter")
-            .font(.title)
-            .foregroundColor(Color.white)
+            VStack{
             Spacer()
-       
-            Button(action: {
+            Text("Band Audition Sorter")
+            .font(.largeTitle)
+                   .foregroundColor(Color.white)
+                Spacer()
+                
+            Text("Varsity Auditions")
+                .font(.title)
+                       .foregroundColor(Color.white)
+            Button(action: {}) {
+             Text("Varsity Percussion")
+                 .multilineTextAlignment(.center)
+            }
+            .padding(.vertical)
+            Button(action: {}) {
+             Text("Varsity Wind")
+                 .multilineTextAlignment(.center)
+            }
+            .padding(.vertical)
+            Button(action: {}) {
+            Text("Varsity Brass")
+                 .multilineTextAlignment(.center)
+            }
+            .padding(.vertical)
+            Spacer()
+            }
+
             
-            }) {
+            
+            VStack{
+            Text("Freshman Auditions")
+                .font(.title)
+                       .foregroundColor(Color.white)
+            Button(action: {}) {
              Text("Freshman Percussion")
                  .multilineTextAlignment(.center)
-               
-             
             }
-            Button(action: {
-            
-            }) {
+                .padding(.vertical)
+            Button(action: {}) {
              Text("Freshman Wind")
                  .multilineTextAlignment(.center)
-                
-             
             }
-            Button(action: {
-            
-            }) {
-             Text("Freshman Brass")
+                .padding(.vertical)
+            Button(action: {}) {
+            Text("Freshman Brass")
                  .multilineTextAlignment(.center)
-               
-             
+            }
+                .padding(.vertical)
+            Spacer()
             }
         }
+            
     }
     }
-    }
-struct ContentView2: View {
-var body: some View {
-        Text("Freshman Percussion")
-    }
-}
+
+
 struct ContentView_Previews: PreviewProvider {
 static var previews: some View {
     ContentView()
     }
+}
 }
