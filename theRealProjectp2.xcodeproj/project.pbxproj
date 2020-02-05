@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41F8961723EAFCCD00344047 /* VarsityPercView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F8961623EAFCCD00344047 /* VarsityPercView.swift */; };
+		41F8961923EAFCE500344047 /* VarsityWindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F8961823EAFCE500344047 /* VarsityWindView.swift */; };
+		41F8961B23EAFCF200344047 /* VarsityBrassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F8961A23EAFCF200344047 /* VarsityBrassView.swift */; };
+		41F8961D23EAFD0000344047 /* FreshPercView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F8961C23EAFD0000344047 /* FreshPercView.swift */; };
+		41F8961F23EAFD0A00344047 /* FreshWindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F8961E23EAFD0A00344047 /* FreshWindView.swift */; };
+		41F8962123EAFD1300344047 /* FreshBrassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F8962023EAFD1300344047 /* FreshBrassView.swift */; };
 		500D813B23E85E6000EEA273 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500D813A23E85E6000EEA273 /* AppDelegate.swift */; };
 		500D813D23E85E6000EEA273 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500D813C23E85E6000EEA273 /* SceneDelegate.swift */; };
 		500D813F23E85E6000EEA273 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500D813E23E85E6000EEA273 /* ContentView.swift */; };
@@ -35,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		41F8961623EAFCCD00344047 /* VarsityPercView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarsityPercView.swift; sourceTree = "<group>"; };
+		41F8961823EAFCE500344047 /* VarsityWindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarsityWindView.swift; sourceTree = "<group>"; };
+		41F8961A23EAFCF200344047 /* VarsityBrassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarsityBrassView.swift; sourceTree = "<group>"; };
+		41F8961C23EAFD0000344047 /* FreshPercView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshPercView.swift; sourceTree = "<group>"; };
+		41F8961E23EAFD0A00344047 /* FreshWindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshWindView.swift; sourceTree = "<group>"; };
+		41F8962023EAFD1300344047 /* FreshBrassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshBrassView.swift; sourceTree = "<group>"; };
 		500D813723E85E6000EEA273 /* theRealProjectp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = theRealProjectp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		500D813A23E85E6000EEA273 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		500D813C23E85E6000EEA273 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +114,12 @@
 				500D813A23E85E6000EEA273 /* AppDelegate.swift */,
 				500D813C23E85E6000EEA273 /* SceneDelegate.swift */,
 				500D813E23E85E6000EEA273 /* ContentView.swift */,
+				41F8961623EAFCCD00344047 /* VarsityPercView.swift */,
+				41F8961823EAFCE500344047 /* VarsityWindView.swift */,
+				41F8961A23EAFCF200344047 /* VarsityBrassView.swift */,
+				41F8961C23EAFD0000344047 /* FreshPercView.swift */,
+				41F8961E23EAFD0A00344047 /* FreshWindView.swift */,
+				41F8962023EAFD1300344047 /* FreshBrassView.swift */,
 				500D814023E85E7500EEA273 /* Assets.xcassets */,
 				500D814523E85E7500EEA273 /* LaunchScreen.storyboard */,
 				500D814823E85E7500EEA273 /* Info.plist */,
@@ -269,7 +287,13 @@
 			files = (
 				500D813B23E85E6000EEA273 /* AppDelegate.swift in Sources */,
 				500D813D23E85E6000EEA273 /* SceneDelegate.swift in Sources */,
+				41F8961D23EAFD0000344047 /* FreshPercView.swift in Sources */,
+				41F8962123EAFD1300344047 /* FreshBrassView.swift in Sources */,
+				41F8961F23EAFD0A00344047 /* FreshWindView.swift in Sources */,
 				500D813F23E85E6000EEA273 /* ContentView.swift in Sources */,
+				41F8961B23EAFCF200344047 /* VarsityBrassView.swift in Sources */,
+				41F8961923EAFCE500344047 /* VarsityWindView.swift in Sources */,
+				41F8961723EAFCCD00344047 /* VarsityPercView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

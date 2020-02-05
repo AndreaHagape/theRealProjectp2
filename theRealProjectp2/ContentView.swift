@@ -21,47 +21,70 @@ struct ContentView: View {
             .font(.largeTitle)
                    .foregroundColor(Color.white)
                 Spacer()
+                Spacer()
+                    .padding(.vertical)
                 
             Text("Varsity Auditions")
                 .font(.title)
                        .foregroundColor(Color.white)
-            Button(action: {}) {
-             Text("Varsity Percussion")
-                 .multilineTextAlignment(.center)
+                    .padding(.all)
+                .background(Color.blue)
+                
+            NavigationLink(destination: VarsityPercView()) {
+                Text("Varsity Percussion")
+                .multilineTextAlignment(.center)
+                .padding(.all)
+                .background(/*@START_MENU_TOKEN@*/Color.white/*@END_MENU_TOKEN@*/)
             }
-            .padding(.vertical)
-            Button(action: {}) {
-             Text("Varsity Wind")
-                 .multilineTextAlignment(.center)
+                .padding(.vertical)
+                
+            NavigationLink(destination: VarsityWindView()) {
+                Text("Varsity Wind")
+                .multilineTextAlignment(.center)
+                .padding(.all)
+                .background(Color.white)
             }
-            .padding(.vertical)
-            Button(action: {}) {
-            Text("Varsity Brass")
-                 .multilineTextAlignment(.center)
+                .padding(.vertical)
+                
+            NavigationLink(destination: VarsityBrassView()) {
+                Text("Varsity Brass")
+                .multilineTextAlignment(.center)
+                .padding(.all)
+                .background(/*@START_MENU_TOKEN@*/Color.white/*@END_MENU_TOKEN@*/)
             }
-            .padding(.vertical)
-            Spacer()
+                .padding(.vertical)
+                Spacer()
             }
-
-            
+                
             
             VStack{
             Text("Freshman Auditions")
-                .font(.title)
-                       .foregroundColor(Color.white)
-            Button(action: {}) {
-             Text("Freshman Percussion")
-                 .multilineTextAlignment(.center)
+            .font(.title)
+                   .foregroundColor(Color.white)
+                .padding(.all)
+            .background(Color.blue)
+                
+            NavigationLink(destination: FreshPercView()) {
+                Text("Freshman Percussion")
+                .multilineTextAlignment(.center)
+                .padding(.all)
+                .background(/*@START_MENU_TOKEN@*/Color.white/*@END_MENU_TOKEN@*/)
             }
                 .padding(.vertical)
-            Button(action: {}) {
-             Text("Freshman Wind")
-                 .multilineTextAlignment(.center)
+
+            NavigationLink(destination: FreshWindView()) {
+                Text("Freshman Wind")
+                .multilineTextAlignment(.center)
+                .padding(.all)
+                .background(/*@START_MENU_TOKEN@*/Color.white/*@END_MENU_TOKEN@*/)
             }
                 .padding(.vertical)
-            Button(action: {}) {
-            Text("Freshman Brass")
-                 .multilineTextAlignment(.center)
+            
+            NavigationLink(destination: FreshBrassView()) {
+                Text("Freshman Brass")
+                .multilineTextAlignment(.center)
+                .padding(.all)
+                .background(/*@START_MENU_TOKEN@*/Color.white/*@END_MENU_TOKEN@*/)
             }
                 .padding(.vertical)
             Spacer()
@@ -78,3 +101,4 @@ static var previews: some View {
     }
 }
 }
+
