@@ -10,9 +10,35 @@ import SwiftUI
 
 struct VarsityPercView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            Color.green
+            .edgesIgnoringSafeArea(.all)
+            VStack{
+                
+                Text("Varsity Percussion")
+                .font(.largeTitle)
+                    .foregroundColor(Color.white)
+                    .padding(.top)
+                    Spacer()
+                NavigationLink(destination: ContentView()) {
+                    Text("Home")
+                    .multilineTextAlignment(.center)
+                        .padding(.all)
+                    .background(/*@START_MENU_TOKEN@*/Color.white/*@END_MENU_TOKEN@*/)
+                }
+                .padding(.vertical)
+                Spacer()
+                List {
+                    
+                    fg
+                }
+                }
+
+            }
+            
+        }
     }
-}
+
 
 struct VarsityPercView_Previews: PreviewProvider {
     static var previews: some View {

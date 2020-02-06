@@ -10,7 +10,17 @@ import SwiftUI
 
 struct VarsityWindView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            Color.green
+            .edgesIgnoringSafeArea(.all)
+            VStack{
+            Text("Varsity Woodwind")
+            .font(.largeTitle)
+                .foregroundColor(Color.white)
+                .padding(.top)
+                           Spacer()
+            }
+        }
     }
 }
 

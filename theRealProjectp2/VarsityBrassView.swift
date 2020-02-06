@@ -10,7 +10,17 @@ import SwiftUI
 
 struct VarsityBrassView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            Color.green
+            .edgesIgnoringSafeArea(.all)
+            VStack{
+            Text("Varsity Brass")
+            .font(.largeTitle)
+                .foregroundColor(Color.white)
+                .padding(.top)
+                           Spacer()
+            }
+        }
     }
 }
 
@@ -19,3 +29,4 @@ struct VarsityBrassView_Previews: PreviewProvider {
         VarsityBrassView()
     }
 }
+

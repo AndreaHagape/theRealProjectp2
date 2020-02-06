@@ -10,7 +10,17 @@ import SwiftUI
 
 struct FreshWindView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            Color.green
+            .edgesIgnoringSafeArea(.all)
+            VStack{
+            Text("Freshmen Woodwind")
+            .font(.largeTitle)
+                .foregroundColor(Color.white)
+                .padding(.top)
+                           Spacer()
+            }
+        }
     }
 }
 
