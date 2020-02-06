@@ -30,7 +30,7 @@ struct VarsityPercView: View {
                 Spacer()
                 List {
                     
-                    fg
+                    Text("name")
                 }
                 }
 
