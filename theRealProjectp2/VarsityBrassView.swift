@@ -10,17 +10,36 @@ import SwiftUI
 
 struct VarsityBrassView: View {
     var body: some View {
-        ZStack{
+          ZStack{
             Color.green
             .edgesIgnoringSafeArea(.all)
             VStack{
-            Text("Varsity Brass")
-            .font(.largeTitle)
-                .foregroundColor(Color.white)
-                .padding(.top)
-                           Spacer()
+                HStack{ NavigationLink(destination: ContentView()) {
+                    Text("Home")
+                    
+                        .padding(.all)
+                    .background(/*@START_MENU_TOKEN@*/Color.white/*@END_MENU_TOKEN@*/)
+                    Spacer()
+                    }
+                .padding(.leading)
+                    
+                }
+                Text("Varsity Brass")
+                .font(.largeTitle)
+                    .foregroundColor(Color.white)
+                    .padding(.top)
+                    
+                
+                .padding(.vertical)
+                
+                List {
+                    
+                    Text("name")
+                }
+                }
+
             }
-        }
+
     }
 }
 

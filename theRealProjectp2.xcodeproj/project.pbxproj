@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B53C41923EC54AA007A68B2 /* StudentRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53C41823EC54AA007A68B2 /* StudentRowView.swift */; };
+		2B5A852623EDA3CD000EEE91 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5A852523EDA3CD000EEE91 /* CalculatorView.swift */; };
 		41F8961723EAFCCD00344047 /* VarsityPercView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F8961623EAFCCD00344047 /* VarsityPercView.swift */; };
 		41F8961923EAFCE500344047 /* VarsityWindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F8961823EAFCE500344047 /* VarsityWindView.swift */; };
 		41F8961B23EAFCF200344047 /* VarsityBrassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F8961A23EAFCF200344047 /* VarsityBrassView.swift */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		2B53C41723EC5339007A68B2 /* StudentData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = StudentData.json; sourceTree = "<group>"; };
 		2B53C41823EC54AA007A68B2 /* StudentRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentRowView.swift; sourceTree = "<group>"; };
+		2B5A852523EDA3CD000EEE91 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 		41F8961623EAFCCD00344047 /* VarsityPercView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarsityPercView.swift; sourceTree = "<group>"; };
 		41F8961823EAFCE500344047 /* VarsityWindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarsityWindView.swift; sourceTree = "<group>"; };
 		41F8961A23EAFCF200344047 /* VarsityBrassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarsityBrassView.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				41F8961C23EAFD0000344047 /* FreshPercView.swift */,
 				41F8961E23EAFD0A00344047 /* FreshWindView.swift */,
 				41F8962023EAFD1300344047 /* FreshBrassView.swift */,
+				2B5A852523EDA3CD000EEE91 /* CalculatorView.swift */,
 				500D814023E85E7500EEA273 /* Assets.xcassets */,
 				500D814523E85E7500EEA273 /* LaunchScreen.storyboard */,
 				500D814823E85E7500EEA273 /* Info.plist */,
@@ -295,6 +298,7 @@
 				41F8961D23EAFD0000344047 /* FreshPercView.swift in Sources */,
 				41F8962123EAFD1300344047 /* FreshBrassView.swift in Sources */,
 				41F8961F23EAFD0A00344047 /* FreshWindView.swift in Sources */,
+				2B5A852623EDA3CD000EEE91 /* CalculatorView.swift in Sources */,
 				2B53C41923EC54AA007A68B2 /* StudentRowView.swift in Sources */,
 				500D813F23E85E6000EEA273 /* ContentView.swift in Sources */,
 				41F8961B23EAFCF200344047 /* VarsityBrassView.swift in Sources */,
