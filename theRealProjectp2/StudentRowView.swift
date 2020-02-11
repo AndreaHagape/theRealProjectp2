@@ -17,7 +17,7 @@ struct StudentRowView: View {
         HStack{
             Spacer()
             Text("name")
-            }
+            
             Spacer()
             Text("instrument")
             Spacer()
@@ -29,8 +29,9 @@ struct StudentRowView: View {
         }
         }
         }
+        }
     }
-}
+
 
 struct StudentRowView_Previews: PreviewProvider {
     static var previews: some View {
