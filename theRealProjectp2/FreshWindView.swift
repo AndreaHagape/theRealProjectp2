@@ -14,16 +14,7 @@ struct FreshWindView: View {
             Color.green
             .edgesIgnoringSafeArea(.all)
             VStack{
-                HStack{ NavigationLink(destination: ContentView()) {
-                    Text("Home")
-                    
-                        .padding(.all)
-                    .background(/*@START_MENU_TOKEN@*/Color.white/*@END_MENU_TOKEN@*/)
-                    Spacer()
-                    }
-                .padding(.leading)
-                    
-                }
+               
                 Text("Freshmen Woodwind")
                 .font(.largeTitle)
                     .foregroundColor(Color.white)

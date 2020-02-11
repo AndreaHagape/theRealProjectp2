@@ -10,8 +10,24 @@ import SwiftUI
 
 struct StudentRowView: View {
     var body: some View {
+        ZStack{
+            Color.green
+            .edgesIgnoringSafeArea(.all)
+        VStack{
         HStack{
+            Spacer()
             Text("name")
+            }
+            Spacer()
+            Text("instrument")
+            Spacer()
+            Text("band")
+            Spacer()
+        }
+        HStack{
+            Text("Score")
+        }
+        }
         }
     }
 }

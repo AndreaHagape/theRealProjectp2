@@ -11,6 +11,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
        
+        NavigationView{
         ZStack {
             Color.green
                 .edgesIgnoringSafeArea(.all)
@@ -30,11 +31,13 @@ struct ContentView: View {
                     .padding(.all)
                 .background(Color.blue)
                 
-            NavigationLink(destination: VarsityPercView()) {
-                Text("Varsity Percussion")
-                .multilineTextAlignment(.center)
-                .padding(.all)
-                .background(/*@START_MENU_TOKEN@*/Color.white/*@END_MENU_TOKEN@*/)
+            
+                
+                 NavigationLink(destination: VarsityPercView()) {
+                Text("Varsity Percussion") .multilineTextAlignment(.center)
+                    .padding(.all)
+                    .background(Color.white)
+                
             }
                 .padding(.vertical)
                 
@@ -90,6 +93,7 @@ struct ContentView: View {
             Spacer()
             }
         }
+            }
             
     }
     }

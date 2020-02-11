@@ -13,6 +13,15 @@ struct CalculatorView: View {
         ZStack {
         Color.green
             .edgesIgnoringSafeArea(.all)
+            VStack{
+                Text("Varsity Percussion Calculator")
+                font(.largeTitle)
+                    .foregroundColor(Color.white)
+                    .padding(.top)
+                    
+                
+                .padding(.vertical)
+            }
         }
     }
 }
