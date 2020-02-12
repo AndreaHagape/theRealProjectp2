@@ -9,6 +9,13 @@
 import SwiftUI
 
 struct StudentRowView: View {
+    @State var name: String = "Student:"
+    @State var instrument: String = "Instrument:"
+    @State var current: String = "Current:"
+    @State var former: String = "Fomer:"
+    @State var newBand: String = "New:"
+    @State var score: String = "Score"
+    
     var body: some View {
         ZStack{
             Color.green
@@ -16,25 +23,47 @@ struct StudentRowView: View {
         VStack{
         HStack{
             Spacer()
-            Text("name")
-            
+            VStack{
+                TextField("Enter name:", text: $name)
+            }
+    
+           
             Spacer()
-            Text("instrument")
+            VStack{
+                TextField("Enter current:", text: $current)
+            }
             Spacer()
-            Text("band")
+            VStack{
+                TextField("Enter former:", text: $former)
+                }
+                Spacer()
+            VStack{
+                TextField("Enter new:", text: $newBand)
+                }
+                Spacer()
+            }
+            VStack{
+                HStack{
+                    Spacer()
+            VStack{
+                TextField("Enter score:", text: $score)
+                    .frame(width: 50
+                )
+            }
             Spacer()
+                }
+            }
         }
-        HStack{
-            Text("Score")
+       
         }
         }
         }
-        }
-    }
+    
 
 
 struct StudentRowView_Previews: PreviewProvider {
     static var previews: some View {
         StudentRowView()
+            .previewLayout(.fixed(width: 400, height: 70))
     }
 }
