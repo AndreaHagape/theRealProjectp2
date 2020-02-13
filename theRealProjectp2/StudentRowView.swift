@@ -47,8 +47,7 @@ struct StudentRowView: View {
                     Spacer()
             VStack{
                 TextField("Enter score:", text: $score)
-                    .frame(width: 50
-                )
+                    .frame(width: 50)
             }
             Spacer()
                 }

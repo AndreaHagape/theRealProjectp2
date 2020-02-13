@@ -9,7 +9,10 @@
 import SwiftUI
 
 struct VarsityWindView: View {
+    
+    
     var body: some View {
+        NavigationView{
               ZStack{
             Color.green
             .edgesIgnoringSafeArea(.all)
@@ -17,19 +20,51 @@ struct VarsityWindView: View {
                 
                 Text("Varsity Woodwind")
                 .font(.largeTitle)
-                    .foregroundColor(Color.white)
+                .foregroundColor(Color.white)
                     .padding(.top)
+                    .padding(.vertical)
+                
                     
                 
-                .padding(.vertical)
                 
-                List {
-                    
-                    Text("name")
+                
+                List{
+                    NavigationLink(destination: VarsityFluteView()) {
+                        Text("Varsity Flute") .multilineTextAlignment(.center)
+                            .padding(.all)
+                            .background(Color.white)
+                        
+                    };
+                    NavigationLink(destination: VarsityOboeView()) {
+                        Text("Varsity Oboe") .multilineTextAlignment(.center)
+                            .padding(.all)
+                            .background(Color.white)
+                        
+                    };
+                    NavigationLink(destination: VarsityClarinetView()) {
+                        Text("Varsity Clarinet") .multilineTextAlignment(.center)
+                            .padding(.all)
+                            .background(Color.white)
+                        
+                    };
+                    NavigationLink(destination: VarsityBassClarinetView()) {
+                        Text("Varsity Bass Clarinet") .multilineTextAlignment(.center)
+                            .padding(.all)
+                            .background(Color.white)
+                        
+                    };
+                    NavigationLink(destination: VarsityBasoonView()) {
+                        Text("Varsity Basoon") .multilineTextAlignment(.center)
+                            .padding(.all)
+                            .background(Color.white)
+                        
+                    };
                 }
+                
                 }
 
             }
+        }
 
     }
 }
