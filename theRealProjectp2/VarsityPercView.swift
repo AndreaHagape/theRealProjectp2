@@ -10,6 +10,7 @@ import SwiftUI
 
 struct VarsityPercView: View {
     var body: some View {
+        NavigationView{
         ZStack{
             Color.green
             .edgesIgnoringSafeArea(.all)
@@ -19,14 +20,17 @@ struct VarsityPercView: View {
                     .foregroundColor(Color.white)
                     .padding(.top)
                     
-                
                 .padding(.vertical)
+               
                 
                 List {
                     
-                    Text("name")
+                    NavigationLink(destination: VPCalculatorView()){StudentRowView()};
+                    
                 }
+            
                 }
+        }
         }
 
             }

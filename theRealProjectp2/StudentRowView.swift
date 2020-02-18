@@ -12,11 +12,12 @@ struct StudentRowView: View {
     @State var name: String = "Student:"
     @State var instrument: String = "Instrument:"
     @State var current: String = "Current:"
-    @State var former: String = "Fomer:"
+    @State var former: String = "Former:"
     @State var newBand: String = "New:"
     @State var score: String = "Score"
     
     var body: some View {
+        
         ZStack{
             Color.green
             .edgesIgnoringSafeArea(.all)
@@ -50,12 +51,13 @@ struct StudentRowView: View {
                     .frame(width: 50)
             }
             Spacer()
-                }
+                    
             }
         }
        
         }
         }
+    }
         }
     
 
