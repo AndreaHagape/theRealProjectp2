@@ -59,9 +59,17 @@ struct VarsityWindView: View {
                             .background(Color.white)
                         
                     };
-                }
+                    NavigationLink(destination: VarsityAltoSaxView()) {
+                    Text("Varsity Alto Sax") .multilineTextAlignment(.center)
+                        .padding(.all)
+                        .background(Color.white)
+                    };
+                    NavigationLink(destination: VarsityTenorSaxView()) {
+                    Text("Varsity Tenor Sax") .multilineTextAlignment(.center)
+                        .padding(.all)
+                        .background(Color.white)
                 
-                }
+                    };
 
             }
         }
