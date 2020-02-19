@@ -25,7 +25,30 @@ struct FreshBrassView: View {
                 
                 List {
                     
-                    Text("name")
+                    NavigationLink(destination: FreshTrumpetView()) {
+                        Text("Freshmen Trumpet") .multilineTextAlignment(.center)
+                            .padding(.all)
+                            .background(Color.white)
+                        
+                    };
+                    NavigationLink(destination: FreshTromboneView()) {
+                        Text("Freshmen Trombone") .multilineTextAlignment(.center)
+                            .padding(.all)
+                            .background(Color.white)
+                        
+                    };
+                    NavigationLink(destination: FreshFrenchHornView()) {
+                        Text("Freshmen French Horn") .multilineTextAlignment(.center)
+                            .padding(.all)
+                            .background(Color.white)
+                        
+                    };
+                    NavigationLink(destination: FreshBaritoneView()) {
+                        Text("Freshmen Baritone") .multilineTextAlignment(.center)
+                            .padding(.all)
+                            .background(Color.white)
+                        
+                    };
                 }
                 }
 

@@ -67,6 +67,12 @@ struct VarsityWindView: View {
                         .background(Color.white)
                 
                     };
+                    NavigationLink(destination: VarsityBariSaxView()) {
+                        Text("Varsity Bari Sax") .multilineTextAlignment(.center)
+                            .padding(.all)
+                            .background(Color.white)
+                    
+                        };
 
             }
         }

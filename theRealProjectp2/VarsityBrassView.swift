@@ -25,7 +25,35 @@ struct VarsityBrassView: View {
                 
                 List {
                     
-                    Text("name")
+                    NavigationLink(destination: VarsityTrumpetView()) {
+                        Text("Varsity Trumpet") .multilineTextAlignment(.center)
+                            .padding(.all)
+                            .background(Color.white)
+                        
+                    };
+                    NavigationLink(destination: VarsityTromboneView()) {
+                        Text("Varsity Trombone") .multilineTextAlignment(.center)
+                            .padding(.all)
+                            .background(Color.white)
+                        
+                    };
+                    NavigationLink(destination: VarsityTubaView()) {
+                        Text("Varsity Tuba") .multilineTextAlignment(.center)
+                            .padding(.all)
+                            .background(Color.white)
+                        
+                    };
+                    NavigationLink(destination: VarsityBaritoneView()) {
+                        Text("Varsity Baritone") .multilineTextAlignment(.center)
+                            .padding(.all)
+                            .background(Color.white)
+                        
+                    };NavigationLink(destination: VarsityFrenchHornView()) {
+                        Text("Varsity French Horn") .multilineTextAlignment(.center)
+                            .padding(.all)
+                            .background(Color.white)
+                        
+                    };
                 }
                 }
 

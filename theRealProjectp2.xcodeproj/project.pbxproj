@@ -16,6 +16,29 @@
 		2BB0E9C323F58CA000CDD552 /* VarsityClarinetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB0E9C223F58CA000CDD552 /* VarsityClarinetView.swift */; };
 		2BB0E9C523F58CEA00CDD552 /* VarsityBassClarinetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB0E9C423F58CEA00CDD552 /* VarsityBassClarinetView.swift */; };
 		2BB0E9C723F58D4000CDD552 /* VarsityBasoonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB0E9C623F58D4000CDD552 /* VarsityBasoonView.swift */; };
+		2BF1E4AB23FD7020001A07E2 /* VarsityBariSaxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E4AA23FD7020001A07E2 /* VarsityBariSaxView.swift */; };
+		2BF1E4AD23FD71FA001A07E2 /* VarsityTrumpetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E4AC23FD71FA001A07E2 /* VarsityTrumpetView.swift */; };
+		2BF1E4AF23FD7213001A07E2 /* VarsityTromboneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E4AE23FD7213001A07E2 /* VarsityTromboneView.swift */; };
+		2BF1E4B123FD7224001A07E2 /* VarsityTubaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E4B023FD7224001A07E2 /* VarsityTubaView.swift */; };
+		2BF1E4B323FD7298001A07E2 /* VarsityBaritoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E4B223FD7298001A07E2 /* VarsityBaritoneView.swift */; };
+		2BF1E4B523FD72AB001A07E2 /* VarsityFrenchHornView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E4B423FD72AB001A07E2 /* VarsityFrenchHornView.swift */; };
+		2BF1E4B723FD7373001A07E2 /* FreshFluteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E4B623FD7373001A07E2 /* FreshFluteView.swift */; };
+		2BF1E4B923FD7385001A07E2 /* FreshOboeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E4B823FD7385001A07E2 /* FreshOboeView.swift */; };
+		2BF1E4BB23FD741B001A07E2 /* FreshClarinetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E4BA23FD741B001A07E2 /* FreshClarinetView.swift */; };
+		2BF1E4BD23FD7430001A07E2 /* FreshBassClarinetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E4BC23FD7430001A07E2 /* FreshBassClarinetView.swift */; };
+		2BF1E4BF23FD7441001A07E2 /* FreshBasoonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E4BE23FD7441001A07E2 /* FreshBasoonView.swift */; };
+		2BF1E4C123FD7457001A07E2 /* FreshAltoSaxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E4C023FD7457001A07E2 /* FreshAltoSaxView.swift */; };
+		2BF1E4C323FD7471001A07E2 /* FreshTenorSaxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E4C223FD7470001A07E2 /* FreshTenorSaxView.swift */; };
+		2BF1E4C523FD7562001A07E2 /* FreshTrumpetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E4C423FD7562001A07E2 /* FreshTrumpetView.swift */; };
+		2BF1E4C723FD7574001A07E2 /* FreshTromboneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E4C623FD7574001A07E2 /* FreshTromboneView.swift */; };
+		2BF1E4C923FD7587001A07E2 /* FreshFrenchHornView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E4C823FD7587001A07E2 /* FreshFrenchHornView.swift */; };
+		2BF1E4CB23FD759C001A07E2 /* FreshTubaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E4CA23FD759C001A07E2 /* FreshTubaView.swift */; };
+		2BF1E4CD23FD75AA001A07E2 /* FreshBaritoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E4CC23FD75AA001A07E2 /* FreshBaritoneView.swift */; };
+		2BF1E4CF23FD7687001A07E2 /* VWCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E4CE23FD7687001A07E2 /* VWCalculatorView.swift */; };
+		2BF1E4D123FD7697001A07E2 /* VBCalulatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E4D023FD7697001A07E2 /* VBCalulatorView.swift */; };
+		2BF1E4D323FD76AA001A07E2 /* FPCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E4D223FD76AA001A07E2 /* FPCalculatorView.swift */; };
+		2BF1E4D523FD76BD001A07E2 /* FWCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E4D423FD76BD001A07E2 /* FWCalculatorView.swift */; };
+		2BF1E4D723FD76CD001A07E2 /* FBCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E4D623FD76CD001A07E2 /* FBCalculatorView.swift */; };
 		41F8961723EAFCCD00344047 /* VarsityPercView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F8961623EAFCCD00344047 /* VarsityPercView.swift */; };
 		41F8961923EAFCE500344047 /* VarsityWindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F8961823EAFCE500344047 /* VarsityWindView.swift */; };
 		41F8961B23EAFCF200344047 /* VarsityBrassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F8961A23EAFCF200344047 /* VarsityBrassView.swift */; };
@@ -60,6 +83,29 @@
 		2BB0E9C223F58CA000CDD552 /* VarsityClarinetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarsityClarinetView.swift; sourceTree = "<group>"; };
 		2BB0E9C423F58CEA00CDD552 /* VarsityBassClarinetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarsityBassClarinetView.swift; sourceTree = "<group>"; };
 		2BB0E9C623F58D4000CDD552 /* VarsityBasoonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarsityBasoonView.swift; sourceTree = "<group>"; };
+		2BF1E4AA23FD7020001A07E2 /* VarsityBariSaxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarsityBariSaxView.swift; sourceTree = "<group>"; };
+		2BF1E4AC23FD71FA001A07E2 /* VarsityTrumpetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarsityTrumpetView.swift; sourceTree = "<group>"; };
+		2BF1E4AE23FD7213001A07E2 /* VarsityTromboneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarsityTromboneView.swift; sourceTree = "<group>"; };
+		2BF1E4B023FD7224001A07E2 /* VarsityTubaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarsityTubaView.swift; sourceTree = "<group>"; };
+		2BF1E4B223FD7298001A07E2 /* VarsityBaritoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarsityBaritoneView.swift; sourceTree = "<group>"; };
+		2BF1E4B423FD72AB001A07E2 /* VarsityFrenchHornView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarsityFrenchHornView.swift; sourceTree = "<group>"; };
+		2BF1E4B623FD7373001A07E2 /* FreshFluteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshFluteView.swift; sourceTree = "<group>"; };
+		2BF1E4B823FD7385001A07E2 /* FreshOboeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshOboeView.swift; sourceTree = "<group>"; };
+		2BF1E4BA23FD741B001A07E2 /* FreshClarinetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshClarinetView.swift; sourceTree = "<group>"; };
+		2BF1E4BC23FD7430001A07E2 /* FreshBassClarinetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshBassClarinetView.swift; sourceTree = "<group>"; };
+		2BF1E4BE23FD7441001A07E2 /* FreshBasoonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshBasoonView.swift; sourceTree = "<group>"; };
+		2BF1E4C023FD7457001A07E2 /* FreshAltoSaxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshAltoSaxView.swift; sourceTree = "<group>"; };
+		2BF1E4C223FD7470001A07E2 /* FreshTenorSaxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshTenorSaxView.swift; sourceTree = "<group>"; };
+		2BF1E4C423FD7562001A07E2 /* FreshTrumpetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshTrumpetView.swift; sourceTree = "<group>"; };
+		2BF1E4C623FD7574001A07E2 /* FreshTromboneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshTromboneView.swift; sourceTree = "<group>"; };
+		2BF1E4C823FD7587001A07E2 /* FreshFrenchHornView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshFrenchHornView.swift; sourceTree = "<group>"; };
+		2BF1E4CA23FD759C001A07E2 /* FreshTubaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshTubaView.swift; sourceTree = "<group>"; };
+		2BF1E4CC23FD75AA001A07E2 /* FreshBaritoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshBaritoneView.swift; sourceTree = "<group>"; };
+		2BF1E4CE23FD7687001A07E2 /* VWCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VWCalculatorView.swift; sourceTree = "<group>"; };
+		2BF1E4D023FD7697001A07E2 /* VBCalulatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VBCalulatorView.swift; sourceTree = "<group>"; };
+		2BF1E4D223FD76AA001A07E2 /* FPCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPCalculatorView.swift; sourceTree = "<group>"; };
+		2BF1E4D423FD76BD001A07E2 /* FWCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FWCalculatorView.swift; sourceTree = "<group>"; };
+		2BF1E4D623FD76CD001A07E2 /* FBCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBCalculatorView.swift; sourceTree = "<group>"; };
 		41F8961623EAFCCD00344047 /* VarsityPercView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarsityPercView.swift; sourceTree = "<group>"; };
 		41F8961823EAFCE500344047 /* VarsityWindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarsityWindView.swift; sourceTree = "<group>"; };
 		41F8961A23EAFCF200344047 /* VarsityBrassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarsityBrassView.swift; sourceTree = "<group>"; };
@@ -144,11 +190,34 @@
 				2BB0E9C423F58CEA00CDD552 /* VarsityBassClarinetView.swift */,
 				2BB0E9C623F58D4000CDD552 /* VarsityBasoonView.swift */,
 				2B1D039923FC1EF0002E540B /* VarsityTenorSaxView.swift */,
+				2BF1E4AA23FD7020001A07E2 /* VarsityBariSaxView.swift */,
 				41F8961A23EAFCF200344047 /* VarsityBrassView.swift */,
+				2BF1E4AC23FD71FA001A07E2 /* VarsityTrumpetView.swift */,
+				2BF1E4AE23FD7213001A07E2 /* VarsityTromboneView.swift */,
+				2BF1E4B023FD7224001A07E2 /* VarsityTubaView.swift */,
+				2BF1E4B223FD7298001A07E2 /* VarsityBaritoneView.swift */,
+				2BF1E4B423FD72AB001A07E2 /* VarsityFrenchHornView.swift */,
 				41F8961C23EAFD0000344047 /* FreshPercView.swift */,
 				41F8961E23EAFD0A00344047 /* FreshWindView.swift */,
+				2BF1E4B623FD7373001A07E2 /* FreshFluteView.swift */,
+				2BF1E4B823FD7385001A07E2 /* FreshOboeView.swift */,
+				2BF1E4BA23FD741B001A07E2 /* FreshClarinetView.swift */,
+				2BF1E4BC23FD7430001A07E2 /* FreshBassClarinetView.swift */,
+				2BF1E4BE23FD7441001A07E2 /* FreshBasoonView.swift */,
+				2BF1E4C023FD7457001A07E2 /* FreshAltoSaxView.swift */,
+				2BF1E4C223FD7470001A07E2 /* FreshTenorSaxView.swift */,
 				41F8962023EAFD1300344047 /* FreshBrassView.swift */,
+				2BF1E4C423FD7562001A07E2 /* FreshTrumpetView.swift */,
+				2BF1E4C623FD7574001A07E2 /* FreshTromboneView.swift */,
+				2BF1E4C823FD7587001A07E2 /* FreshFrenchHornView.swift */,
+				2BF1E4CA23FD759C001A07E2 /* FreshTubaView.swift */,
+				2BF1E4CC23FD75AA001A07E2 /* FreshBaritoneView.swift */,
 				2B1D039B23FC27AD002E540B /* VPCalculatorView.swift */,
+				2BF1E4CE23FD7687001A07E2 /* VWCalculatorView.swift */,
+				2BF1E4D023FD7697001A07E2 /* VBCalulatorView.swift */,
+				2BF1E4D223FD76AA001A07E2 /* FPCalculatorView.swift */,
+				2BF1E4D423FD76BD001A07E2 /* FWCalculatorView.swift */,
+				2BF1E4D623FD76CD001A07E2 /* FBCalculatorView.swift */,
 				500D814023E85E7500EEA273 /* Assets.xcassets */,
 				500D814523E85E7500EEA273 /* LaunchScreen.storyboard */,
 				500D814823E85E7500EEA273 /* Info.plist */,
@@ -314,23 +383,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BF1E4B523FD72AB001A07E2 /* VarsityFrenchHornView.swift in Sources */,
 				500D813B23E85E6000EEA273 /* AppDelegate.swift in Sources */,
+				2BF1E4BB23FD741B001A07E2 /* FreshClarinetView.swift in Sources */,
+				2BF1E4B723FD7373001A07E2 /* FreshFluteView.swift in Sources */,
 				2BB0E9C723F58D4000CDD552 /* VarsityBasoonView.swift in Sources */,
 				500D813D23E85E6000EEA273 /* SceneDelegate.swift in Sources */,
+				2BF1E4C923FD7587001A07E2 /* FreshFrenchHornView.swift in Sources */,
+				2BF1E4AF23FD7213001A07E2 /* VarsityTromboneView.swift in Sources */,
+				2BF1E4D723FD76CD001A07E2 /* FBCalculatorView.swift in Sources */,
 				41F8961D23EAFD0000344047 /* FreshPercView.swift in Sources */,
 				2BB0E9C123F58C6700CDD552 /* VarsityOboeView.swift in Sources */,
 				41F8962123EAFD1300344047 /* FreshBrassView.swift in Sources */,
 				41F8961F23EAFD0A00344047 /* FreshWindView.swift in Sources */,
 				2BB0E9C523F58CEA00CDD552 /* VarsityBassClarinetView.swift in Sources */,
+				2BF1E4D323FD76AA001A07E2 /* FPCalculatorView.swift in Sources */,
+				2BF1E4AB23FD7020001A07E2 /* VarsityBariSaxView.swift in Sources */,
+				2BF1E4AD23FD71FA001A07E2 /* VarsityTrumpetView.swift in Sources */,
+				2BF1E4C123FD7457001A07E2 /* FreshAltoSaxView.swift in Sources */,
 				2BB0E9C323F58CA000CDD552 /* VarsityClarinetView.swift in Sources */,
 				2BB0E9BF23F58BDC00CDD552 /* VarsityFluteView.swift in Sources */,
+				2BF1E4D523FD76BD001A07E2 /* FWCalculatorView.swift in Sources */,
+				2BF1E4C723FD7574001A07E2 /* FreshTromboneView.swift in Sources */,
+				2BF1E4BD23FD7430001A07E2 /* FreshBassClarinetView.swift in Sources */,
+				2BF1E4B123FD7224001A07E2 /* VarsityTubaView.swift in Sources */,
+				2BF1E4B323FD7298001A07E2 /* VarsityBaritoneView.swift in Sources */,
+				2BF1E4D123FD7697001A07E2 /* VBCalulatorView.swift in Sources */,
 				2B53C41923EC54AA007A68B2 /* StudentRowView.swift in Sources */,
+				2BF1E4C523FD7562001A07E2 /* FreshTrumpetView.swift in Sources */,
+				2BF1E4C323FD7471001A07E2 /* FreshTenorSaxView.swift in Sources */,
+				2BF1E4CD23FD75AA001A07E2 /* FreshBaritoneView.swift in Sources */,
+				2BF1E4CB23FD759C001A07E2 /* FreshTubaView.swift in Sources */,
+				2BF1E4BF23FD7441001A07E2 /* FreshBasoonView.swift in Sources */,
 				500D813F23E85E6000EEA273 /* ContentView.swift in Sources */,
 				41F8961B23EAFCF200344047 /* VarsityBrassView.swift in Sources */,
 				41F8961923EAFCE500344047 /* VarsityWindView.swift in Sources */,
+				2BF1E4CF23FD7687001A07E2 /* VWCalculatorView.swift in Sources */,
 				2B1D039C23FC27AD002E540B /* VPCalculatorView.swift in Sources */,
 				2B1D039A23FC1EF0002E540B /* VarsityTenorSaxView.swift in Sources */,
 				2B1D039823FC1EBD002E540B /* VarsityAltoSaxView.swift in Sources */,
+				2BF1E4B923FD7385001A07E2 /* FreshOboeView.swift in Sources */,
 				41F8961723EAFCCD00344047 /* VarsityPercView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

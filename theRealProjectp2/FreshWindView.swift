@@ -25,7 +25,54 @@ struct FreshWindView: View {
                 
                 List {
                     
-                    Text("name")
+                    NavigationLink(destination: FreshFluteView()) {
+                        Text("Freshmen Flute") .multilineTextAlignment(.center)
+                            .padding(.all)
+                            .background(Color.white)
+                        
+                    };
+                    NavigationLink(destination: FreshOboeView()) {
+                        Text("Freshmen Oboe") .multilineTextAlignment(.center)
+                            .padding(.all)
+                            .background(Color.white)
+                        
+                    };
+                    NavigationLink(destination: FreshClarinetView()) {
+                        Text("Freshmen Clarinet") .multilineTextAlignment(.center)
+                            .padding(.all)
+                            .background(Color.white)
+                        
+                    };
+                    NavigationLink(destination: FreshBasoonView()) {
+                        Text("Freshmen Basoon") .multilineTextAlignment(.center)
+                            .padding(.all)
+                            .background(Color.white)
+                        
+                    };
+                    NavigationLink(destination: FreshBassClarinetView()) {
+                        Text("Freshmen Bass Clarinet") .multilineTextAlignment(.center)
+                            .padding(.all)
+                            .background(Color.white)
+                        
+                    };
+                    NavigationLink(destination: FreshAltoSaxView()) {
+                        Text("Freshmen Alto Saxophone") .multilineTextAlignment(.center)
+                            .padding(.all)
+                            .background(Color.white)
+                        
+                    };
+                    NavigationLink(destination: FreshTenorSaxView()) {
+                        Text("Freshmen Tenor Saxophone") .multilineTextAlignment(.center)
+                            .padding(.all)
+                            .background(Color.white)
+                        
+                    };
+
+
+
+
+
+
                 }
                 }
 
