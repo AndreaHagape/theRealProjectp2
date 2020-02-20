@@ -9,11 +9,33 @@
 import SwiftUI
 
 struct VarsityAltoSaxView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+var body: some View {
+    NavigationView{
+    ZStack{
+        Color.green
+        .edgesIgnoringSafeArea(.all)
+        VStack{
+            Text("Varsity Alto Sax")
+            .font(.largeTitle)
+                .foregroundColor(Color.white)
+                .padding(.top)
+                
+            .padding(.vertical)
+           
+            
+            List {
+                
+                NavigationLink(destination: VWCalculatorView()){StudentRowView()};
+                
+            }
+        
+            }
     }
-}
+    }
 
+        }
+        
+    }
 struct VarsityAltoSaxView_Previews: PreviewProvider {
     static var previews: some View {
         VarsityAltoSaxView()

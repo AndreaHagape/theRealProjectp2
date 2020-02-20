@@ -10,7 +10,11 @@ import SwiftUI
 
 struct FreshFluteView: View {
     var body: some View {
+        ZStack{
+        Color.green
+        .edgesIgnoringSafeArea(.all)
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        }
     }
 }
 
