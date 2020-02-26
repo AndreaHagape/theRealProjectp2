@@ -1,5 +1,5 @@
 //
-//  VBCalulatorView.swift
+//  VBCalculatorView.swift
 //  theRealProjectp2
 //
 //  Created by Shah, Rani on 2/19/20.
@@ -8,14 +8,14 @@
 
 import SwiftUI
 
-struct VBCalulatorView: View {
+struct VBCalculatorView: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
-struct VBCalulatorView_Previews: PreviewProvider {
+struct VBCalculatorView_Previews: PreviewProvider {
     static var previews: some View {
-        VBCalulatorView()
+        VBCalculatorView()
     }
 }

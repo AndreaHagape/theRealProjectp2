@@ -9,38 +9,53 @@
 import SwiftUI
 
 struct VarsityPercView: View {
-    var body: some View {
-        NavigationView{
-        ZStack{
-            Color.green
-            .edgesIgnoringSafeArea(.all)
-            VStack{
-                Text("Varsity Percussion")
-                .font(.largeTitle)
-                    .foregroundColor(Color.white)
-                    .padding(.top)
-                    
-                .padding(.vertical)
-               
-                
-                List {
-                    
-                    NavigationLink(destination: VPCalculatorView()){StudentRowView()};
-                    
-                }
-            
-                }
-        }
-        }
+    
+    @State private var students = ["Paul", "Taylor", "Adele"]
 
-            }
-            
+    var body: some View {
+        NavigationView {
+                List {
+                    ForEach(students, id: \.self) { student in
+                        Text(student) }
+                .onDelete(perform: delete)
+                }
+                .navigationBarTitle(Text("Students"))
+                    
+                .navigationBarItems(trailing:
+                    HStack {
+                        EditButton() 
+                            
+                        
+                    
+                        Button(action: {self.addRow() })  {
+                            Text("add")
+                        }
+                    })
+        
+                
+        }
+        
         }
     
+        func delete(at offsets: IndexSet) {
+            students.remove(atOffsets: offsets) }
+            
+        private func addRow() {
+            self.students.append("New Student")
+        }
 
-
+}
+    
 struct VarsityPercView_Previews: PreviewProvider {
     static var previews: some View {
         VarsityPercView()
     }
 }
+    
+
+
+
+
+
+                                                                                                                      
+                                                      
