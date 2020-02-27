@@ -10,40 +10,26 @@ import SwiftUI
 
 struct VarsityPercView: View {
     
-    @State private var students = ["Paul", "Taylor", "Adele"]
+    
 
     var body: some View {
         NavigationView {
-                List {
-                    ForEach(students, id: \.self) { student in
-                        Text(student) }
-                .onDelete(perform: delete)
-                }
-                .navigationBarTitle(Text("Students"))
-                    
-                .navigationBarItems(trailing:
-                    HStack {
-                        EditButton() 
-                            
-                        
-                    
-                        Button(action: {self.addRow() })  {
-                            Text("add")
-                        }
-                    })
-        
-                
-        }
-        
-        }
-    
-        func delete(at offsets: IndexSet) {
-            students.remove(atOffsets: offsets) }
+            VStack{
             
-        private func addRow() {
-            self.students.append("New Student")
-        }
+            Text("Varsity Woodwind")
+            .font(.largeTitle)
+            List{
+                NavigationLink(destination: VPCalculatorView()) {
+                StudentRowView()
+                };
+                NavigationLink(destination: VPCalculatorView()) {
+                    StudentRowView()
+                }
 
+            }
+        }
+    }
+}
 }
     
 struct VarsityPercView_Previews: PreviewProvider {

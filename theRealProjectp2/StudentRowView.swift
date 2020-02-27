@@ -65,6 +65,6 @@ struct StudentRowView: View {
 struct StudentRowView_Previews: PreviewProvider {
     static var previews: some View {
         StudentRowView()
-            .previewLayout(.fixed(width: 400, height: 70))
+            .previewLayout(.fixed(width: 450, height: 70))
     }
 }
