@@ -9,33 +9,33 @@
 import SwiftUI
 
 struct VarsityAltoSaxView: View {
-var body: some View {
-    NavigationView{
-    ZStack{
-        Color.green
-        .edgesIgnoringSafeArea(.all)
-        VStack{
-            Text("Varsity Alto Sax")
-            .font(.largeTitle)
-                .foregroundColor(Color.white)
-                .padding(.top)
-                
-            .padding(.vertical)
-           
-            
-            List {
-                
-                NavigationLink(destination: VWCalculatorView()){StudentRowView()};
-                
+@State private var usedWords = [String] ()
+    @State private var rootWord = ""
+    @State private var newWord = ""
+    
+
+    var body: some View {
+        NavigationView {
+            VStack{
+                TextField("Enter your word", text: $newWord, onCommit: addNewWord)
+                List(usedWords, id: \.self){
+                    Text($0)
+                }
             }
-        
-            }
-    }
+        .navigationBarTitle(rootWord)
+}
+}
+    func addNewWord(){
+
+        let answer = newWord
+        usedWords.insert(answer, at: 0)
+        newWord = ""
+        return
     }
 
-        }
+}
         
-    }
+
 struct VarsityAltoSaxView_Previews: PreviewProvider {
     static var previews: some View {
         VarsityAltoSaxView()

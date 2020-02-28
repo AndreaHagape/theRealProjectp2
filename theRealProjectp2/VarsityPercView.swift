@@ -9,35 +9,36 @@
 import SwiftUI
 
 struct VarsityPercView: View {
-    
+@State private var usedWords = [String] ()
+    @State private var rootWord = ""
+    @State private var newWord = ""
     
 
     var body: some View {
         NavigationView {
             VStack{
-            
-            Text("Varsity Woodwind")
-            .font(.largeTitle)
-            List{
-                NavigationLink(destination: VPCalculatorView()) {
-                StudentRowView()
-                };
-                NavigationLink(destination: VPCalculatorView()) {
-                    StudentRowView()
+                TextField("Enter your word", text: $newWord, onCommit: addNewWord)
+                List(usedWords, id: \.self){
+                    Text($0)
                 }
-
             }
-        }
+        .navigationBarTitle(rootWord)
+}
+}
+    func addNewWord(){
+
+        let answer = newWord
+        usedWords.insert(answer, at: 0)
+        newWord = ""
+        return
     }
-}
-}
     
 struct VarsityPercView_Previews: PreviewProvider {
     static var previews: some View {
         VarsityPercView()
     }
 }
-    
+}
 
 
 

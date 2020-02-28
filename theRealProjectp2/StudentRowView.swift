@@ -14,7 +14,7 @@ struct StudentRowView: View {
     @State var current: String = "Current:"
     @State var former: String = "Former:"
     @State var newBand: String = "New:"
-    @State var score: String = "Score"
+    @State var score: String = "Score:"
     
     var body: some View {
         
@@ -24,32 +24,32 @@ struct StudentRowView: View {
         VStack{
         HStack{
             Spacer()
-            VStack{
+           
                 TextField("Enter name:", text: $name)
-            }
+            
     
            
             Spacer()
-            VStack{
+            
                 TextField("Enter current:", text: $current)
-            }
+            
             Spacer()
-            VStack{
+            
                 TextField("Enter former:", text: $former)
-                }
+                
                 Spacer()
-            VStack{
+            
                 TextField("Enter new:", text: $newBand)
-                }
+                
                 Spacer()
             }
             VStack{
                 HStack{
                     Spacer()
-            VStack{
+            
                 TextField("Enter score:", text: $score)
                     .frame(width: 50)
-            }
+            
             Spacer()
                     
             }
@@ -58,7 +58,7 @@ struct StudentRowView: View {
         }
         }
     }
-        }
+}
     
 
 

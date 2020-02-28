@@ -9,29 +9,29 @@
 import SwiftUI
 
 struct FreshPercView: View {
-    var body: some View {
-        ZStack{
-            Color.green
-            .edgesIgnoringSafeArea(.all)
-            VStack{
-                
-                Text("Freshmen Percussion")
-                .font(.largeTitle)
-                    .foregroundColor(Color.white)
-                    .padding(.top)
-                    
-                
-                .padding(.vertical)
-                
-                List {
-                    
-                    Text("name")
-                }
-                }
+    @State private var usedWords = [String] ()
+        @State private var rootWord = ""
+        @State private var newWord = ""
+        
 
-            }
-
+        var body: some View {
+            NavigationView {
+                VStack{
+                    TextField("Enter your word", text: $newWord, onCommit: addNewWord)
+                    List(usedWords, id: \.self){
+                        Text($0)
+                    }
+                }
+            .navigationBarTitle(rootWord)
     }
+    }
+        func addNewWord(){
+
+            let answer = newWord
+            usedWords.insert(answer, at: 0)
+            newWord = ""
+            return
+        }
 }
 
 struct FreshPercView_Previews: PreviewProvider {
