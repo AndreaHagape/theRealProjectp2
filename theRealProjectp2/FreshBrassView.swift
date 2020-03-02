@@ -10,6 +10,7 @@ import SwiftUI
 
 struct FreshBrassView: View {
     var body: some View {
+        NavigationView{
         ZStack{
             Color.green
             .edgesIgnoringSafeArea(.all)
@@ -53,7 +54,8 @@ struct FreshBrassView: View {
                 }
 
             }
-
+            navigationViewStyle(StackNavigationViewStyle())
+        }
     }
 }
 

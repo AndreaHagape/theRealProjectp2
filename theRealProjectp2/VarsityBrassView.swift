@@ -10,6 +10,7 @@ import SwiftUI
 
 struct VarsityBrassView: View {
     var body: some View {
+        NavigationView{
           ZStack{
             Color.green
             .edgesIgnoringSafeArea(.all)
@@ -55,8 +56,10 @@ struct VarsityBrassView: View {
                         
                     };
                 }
+                    
                 }
-
+                }
+navigationViewStyle(StackNavigationViewStyle())
             }
 
     }

@@ -21,6 +21,7 @@ struct FreshBassClarinetView: View {
                     List(usedWords, id: \.self){
                         Text($0)
                     }
+                    
                 }
             .navigationBarTitle(rootWord)
     }

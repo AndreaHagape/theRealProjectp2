@@ -22,6 +22,7 @@ struct FreshPercView: View {
                         Text($0)
                     }
                 }
+           //navigationViewStyle(StackNavigationViewStyle())
             .navigationBarTitle(rootWord)
     }
     }

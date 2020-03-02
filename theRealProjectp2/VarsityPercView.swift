@@ -21,9 +21,13 @@ struct VarsityPercView: View {
                 List(usedWords, id: \.self){
                     Text($0)
                 }
+            
             }
+                
         .navigationBarTitle(rootWord)
+    
 }
+        //navigationViewStyle(StackNavigationViewStyle())
 }
     func addNewWord(){
 

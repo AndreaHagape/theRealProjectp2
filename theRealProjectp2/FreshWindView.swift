@@ -10,6 +10,7 @@ import SwiftUI
 
 struct FreshWindView: View {
     var body: some View {
+        NavigationView{
         ZStack{
             Color.green
             .edgesIgnoringSafeArea(.all)
@@ -70,12 +71,13 @@ struct FreshWindView: View {
 
 
 
-
+                
 
 
                 }
                 }
-
+                }
+navigationViewStyle(StackNavigationViewStyle())
             }
 
     }

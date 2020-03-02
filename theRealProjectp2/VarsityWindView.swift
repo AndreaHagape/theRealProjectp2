@@ -12,7 +12,7 @@ struct VarsityWindView: View {
     
     
     var body: some View {
-        
+        NavigationView{
               ZStack{
             Color.green
             .edgesIgnoringSafeArea(.all)
@@ -24,7 +24,7 @@ struct VarsityWindView: View {
                     .padding(.top)
                     .padding(.vertical)
                 
-                NavigationView{
+                
                 List{
                     NavigationLink(destination: VarsityFluteView()) {
                         Text("Varsity Flute") .multilineTextAlignment(.center)
@@ -75,9 +75,11 @@ struct VarsityWindView: View {
                         };
 
             }
+                    
         }
 
     }
+            navigationViewStyle(StackNavigationViewStyle())
 }
     }
 }

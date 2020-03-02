@@ -23,6 +23,7 @@ struct VarsityTrumpetView: View {
                     }
                 }
             .navigationBarTitle(rootWord)
+            navigationViewStyle(StackNavigationViewStyle())
     }
     }
         func addNewWord(){
