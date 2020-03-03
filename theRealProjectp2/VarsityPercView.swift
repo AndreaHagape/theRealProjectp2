@@ -15,22 +15,37 @@ struct VarsityPercView: View {
     
 
     var body: some View {
-        NavigationView {
+        //NavigationView {
+        ZStack{
+        Color.green
+        .edgesIgnoringSafeArea(.all)
             VStack{
-                TextField("Enter your word", text: $newWord, onCommit: addNewWord)
+            
+            Text("Varsity Percussion")
+            .font(.largeTitle)
+            .foregroundColor(Color.white)
+            .padding(.top)
+            .padding(.vertical)
+                
+                TextField("Enter Student Name", text: $newWord, onCommit: addNewWord)
+                
+               NavigationLink(destination: VPCalculatorView()) {
                 List(usedWords, id: \.self){
                     Text($0)
+                    }
                 }
-            
-            }
                 
-        .navigationBarTitle(rootWord)
-    
-}
-        //navigationViewStyle(StackNavigationViewStyle())
-}
-    func addNewWord(){
+                }
 
+            
+        
+        //.navigationBarTitle(rootWord)
+        //}
+       //.navigationViewStyle(StackNavigationViewStyle())
+        }
+    }
+    
+    func addNewWord(){
         let answer = newWord
         usedWords.insert(answer, at: 0)
         newWord = ""

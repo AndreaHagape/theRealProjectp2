@@ -25,18 +25,18 @@ struct ContentView: View {
                 Spacer()
                     .padding(.vertical)
                 
+                
             Text("Varsity Auditions")
                 .font(.title)
                        .foregroundColor(Color.white)
                     .padding(.all)
                 .background(Color.blue)
                 
-            
-                
-                 NavigationLink(destination: VarsityPercView()) {
-                Text("Varsity Percussion") .multilineTextAlignment(.center)
-                    .padding(.all)
-                    .background(Color.white)
+            NavigationLink(destination: VarsityPercView()) {
+                Text("Varsity Percussion")
+                .multilineTextAlignment(.center)
+                .padding(.all)
+                .background(Color.white)
                 
             }
                 .padding(.vertical)
