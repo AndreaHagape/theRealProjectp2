@@ -28,8 +28,7 @@ struct VarsityPercView: View {
                 }
 
             }
-           
-        .navigationBarTitle(Text("Varsity Percussion"))
+                   .navigationBarTitle(Text("Varsity Percussion"))
             .navigationBarItems(trailing:
                 Button(action: {
                     let item = ListItem(name: "Test")
@@ -38,6 +37,8 @@ struct VarsityPercView: View {
                     Image(systemName: "plus")
                 }
             )
+            navigationViewStyle(StackNavigationViewStyle())
+
         }
     }
 }
