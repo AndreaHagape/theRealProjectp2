@@ -17,6 +17,10 @@ struct VPCalculatorView: View {
     @State var s2pitch: String = ""
     @State var s2tempo: String = ""
     @State var s2sound: String = ""
+    
+    @State var s3pitch: String = ""
+    @State var s3tempo: String = ""
+    @State var s3sound: String = ""
  
     var body: some View {
         VStack{
@@ -27,7 +31,7 @@ struct VPCalculatorView: View {
                 List{Text("Scale 1"); Text("n/a"); TextField("/20", text: $s1pitch); TextField("/20", text: $s1tempo); Text("n/a"); TextField("/20", text: $s1sound)}
                 
             List{Text("Scale 2"); Text("n/a"); TextField("/20", text: $s2pitch); TextField("/20", text: $s2tempo); Text("n/a"); TextField("/20", text: $s2sound)}
-            List{Text("Scale 3")}
+            List{Text("Scale 3"); Text("n/a"); TextField("/20", text: $s3pitch); TextField("/20", text: $s3tempo); Text("n/a"); TextField("/20", text: $s3sound)}
             List{Text("Snare Etude")}
             List{Text("Mallet Etude")}
             List{Text("Timp Etude")}
