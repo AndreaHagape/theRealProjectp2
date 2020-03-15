@@ -51,7 +51,12 @@ struct VPCalculatorView: View {
  
     var body: some View {
         VStack{
-        TextField("", text: self.$item.name)
+        HStack{
+            TextField("", text: self.$item.name)
+            Spacer()
+            Text("Score: " + String(findAverage()) + "%")
+            Spacer()
+        }
             HStack{
             List{Text("hello"); Text("Rhythm"); Text("Pitch"); Text("Tempo"); Text("Dynamic"); Text("Sound")}
                 
@@ -75,10 +80,55 @@ struct VPCalculatorView: View {
  
         }
     }
-}
-struct VPCalc{
     
+    func findAverage() -> Int {
+        var avg: Int = 0
+        let ints1pitch: Int = Int(s1pitch) ?? 0
+         let ints1tempo: Int = Int(s1tempo) ?? 0
+         let ints1sound: Int = Int(s1sound) ?? 0
+        
+         let ints2pitch: Int = Int(s2pitch) ?? 0
+         let ints2tempo: Int = Int(s2tempo) ?? 0
+         let ints2sound: Int = Int(s2sound) ?? 0
+        
+         let ints3pitch: Int = Int(s3pitch) ?? 0
+        let ints3tempo: Int = Int(s3tempo) ?? 0
+        let ints3sound: Int = Int(s3sound) ?? 0
+        
+        let intserhythm: Int = Int(serhythm) ?? 0
+       let intsetempo: Int = Int(setempo) ?? 0
+        let intsedynamic: Int = Int(sedynamic) ?? 0
+        let intsesound: Int = Int(sesound) ?? 0
+        
+        let intmerhythm: Int = Int(merhythm) ?? 0
+        let intmepitch: Int = Int(mepitch) ?? 0
+        let intmetempo: Int = Int(metempo) ?? 0
+        let intmedynamic: Int = Int(medynamic) ?? 0
+        let intmesound: Int = Int(mesound) ?? 0
+        
+        let intterhythm: Int = Int(terhythm) ?? 0
+        let inttetempo: Int = Int(tetempo) ?? 0
+        let inttedynamic: Int = Int(tedynamic) ?? 0
+        let inttesound: Int = Int(tesound) ?? 0
+        
+        let intssrrhythm: Int = Int(ssrrhythm) ?? 0
+        let intssrtempo: Int = Int(ssrtempo) ?? 0
+        let intssrdynamic: Int = Int(ssrdynamic) ?? 0
+        let intssrsound: Int = Int(ssrsound) ?? 0
+        
+        let intmsrrhythm: Int = Int(msrrhythm) ?? 0
+        let intmsrpitch: Int = Int(msrpitch) ?? 0
+        let intmsrtempo: Int = Int(msrtempo) ?? 0
+        let intmsrsound: Int = Int(msrsound) ?? 0
+        
+        let sum = ints1pitch + ints1sound + ints1tempo + ints2pitch + ints2tempo + ints2sound + ints3pitch + ints3tempo + ints3sound + intserhythm + intsetempo + intsedynamic + intsesound + intmerhythm + intmepitch + intmetempo + intmedynamic + intmesound + intterhythm + inttetempo + inttedynamic + inttesound + intssrrhythm + intssrtempo + intssrdynamic + intssrsound + intmsrrhythm + intmsrpitch + intmsrtempo + intmsrsound
+        avg = Int((Double(sum)/(30.0 * 20.0)) * 100.0)
+        
+        return avg
+    }
+
 }
+
  
  
 /*struct VPCalculatorView_Previews: PreviewProvider {
