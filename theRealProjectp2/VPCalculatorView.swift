@@ -54,11 +54,11 @@ struct VPCalculatorView: View {
         HStack{
             TextField("", text: self.$item.name)
             Spacer()
-            Text("Score: " + String(findAverage()) + "%")
+            Text("Score: " + String(findAverageVP()) + "%")
             Spacer()
         }
             HStack{
-            List{Text("hello"); Text("Rhythm"); Text("Pitch"); Text("Tempo"); Text("Dynamic"); Text("Sound")}
+            List{Text(""); Text("Rhythm"); Text("Pitch"); Text("Tempo"); Text("Dynamic"); Text("Sound")}
                 
             List{Text("Scale 1"); Text("n/a"); TextField("/20", text: $s1pitch); TextField("/20", text: $s1tempo); Text("n/a"); TextField("/20", text: $s1sound)}
                 
@@ -81,7 +81,7 @@ struct VPCalculatorView: View {
         }
     }
     
-    func findAverage() -> Int {
+    func findAverageVP() -> Int {
         var avg: Int = 0
         let ints1pitch: Int = Int(s1pitch) ?? 0
          let ints1tempo: Int = Int(s1tempo) ?? 0

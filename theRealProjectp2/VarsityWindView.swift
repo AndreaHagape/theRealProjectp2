@@ -18,11 +18,12 @@ struct VarsityWindView: View {
             .edgesIgnoringSafeArea(.all)
             VStack{
                 
-                Text("Varsity Woodwind")
+               /* Text("Varsity Woodwind")
                 .font(.largeTitle)
                 .foregroundColor(Color.white)
                     .padding(.top)
                     .padding(.vertical)
+                 */
                 
                 
                 List{
@@ -80,6 +81,7 @@ struct VarsityWindView: View {
         }
 
     }
+            .navigationBarTitle(Text("Varsity Woodwind"))
             navigationViewStyle(StackNavigationViewStyle())
 }
     }

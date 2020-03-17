@@ -10,19 +10,21 @@ import SwiftUI
 
 struct VarsityBrassView: View {
     var body: some View {
+        
         NavigationView{
           ZStack{
             Color.green
             .edgesIgnoringSafeArea(.all)
             VStack{
                
-                Text("Varsity Brass")
+               /* Text("Varsity Brass")
                 .font(.largeTitle)
                     .foregroundColor(Color.white)
                     .padding(.top)
                     
                 
                 .padding(.vertical)
+                 */
                 
                 List {
                     
@@ -59,6 +61,7 @@ struct VarsityBrassView: View {
                     
                 }
                 }
+            .navigationBarTitle(Text("Varsity Brass"))
 navigationViewStyle(StackNavigationViewStyle())
             }
 

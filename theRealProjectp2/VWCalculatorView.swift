@@ -9,7 +9,12 @@
 import SwiftUI
 
 struct VWCalculatorView: View {
+@Binding var item: ListItem
     var body: some View {
+        VStack{
+            TextField("", text: self.$item.name)
+            Spacer()
+            Text("")
             HStack{
             List{Text("hello")}
             List{Text("hello")}
@@ -20,11 +25,13 @@ struct VWCalculatorView: View {
             List{Text("hello")}
             List{Text("hello")}
         }
+        }
     }
 }
 
-struct VWCalculatorView_Previews: PreviewProvider {
+/*struct VWCalculatorView_Previews: PreviewProvider {
     static var previews: some View {
         VWCalculatorView()
     }
 }
+*/

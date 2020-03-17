@@ -9,29 +9,35 @@
 import SwiftUI
 
 struct VarsityTenorSaxView: View {
-    @State private var usedWords = [String] ()
-        @State private var rootWord = ""
-        @State private var newWord = ""
-        
+    @ObservedObject var myList = MyListClass()
+      
 
-        var body: some View {
-            NavigationView {
-                VStack{
-                    TextField("Enter your word", text: $newWord, onCommit: addNewWord)
-                    List(usedWords, id: \.self){
-                        Text($0)
-                    }
-                }
-            .navigationBarTitle(rootWord)
-    }
-    }
-        func addNewWord(){
+      var body: some View {
+          
+          NavigationView {
+              List {
+                  ForEach(myList.items) { item in
+                      // Pass binding to item into DetailsView
+                      NavigationLink(destination: VWCalculatorView(item: self.$myList.items[self.myList.items.firstIndex(of: item)!])) {
+                          Text(item.name)
+                      }
+                  }
 
-            let answer = newWord
-            usedWords.insert(answer, at: 0)
-            newWord = ""
-            return
-        }
+              }
+                     .navigationBarTitle(Text("Varsity Tenor Saxophone"))
+              .navigationBarItems(trailing:
+                  Button(action: {
+                      let item = ListItem(name: "Test")
+                      self.myList.items.append(item)
+                  }) {
+                      Image(systemName: "plus")
+                  }
+              )
+              navigationViewStyle(StackNavigationViewStyle())
+
+          }
+      }
+
 }
 
 struct VarsityTenorSaxView_Previews: PreviewProvider {

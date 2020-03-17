@@ -9,13 +9,29 @@
 import SwiftUI
 
 struct VBCalculatorView: View {
+   @Binding var item: ListItem
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            TextField("", text: self.$item.name)
+            Spacer()
+            Text("")
+            HStack{
+            List{Text("hello")}
+            List{Text("hello")}
+            List{Text("hello")}
+            List{Text("hello")}
+            List{Text("hello")}
+            List{Text("hello")}
+            List{Text("hello")}
+            List{Text("hello")}
+        }
+        }
     }
 }
 
-struct VBCalculatorView_Previews: PreviewProvider {
+/*struct VBCalculatorView_Previews: PreviewProvider {
     static var previews: some View {
         VBCalculatorView()
     }
 }
+*/
