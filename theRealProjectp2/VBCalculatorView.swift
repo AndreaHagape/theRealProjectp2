@@ -9,12 +9,20 @@
 import SwiftUI
 
 struct VBCalculatorView: View {
-   @Binding var item: ListItem
+    @Binding var item: ListItem
+    @State var comment: String = ""
+
     var body: some View {
         VStack{
-            TextField("", text: self.$item.name)
+            HStack{
+                TextField("", text: self.$item.name)
+                Spacer()
+                Text("")
+            }
+            
+            TextView(text: $comment).frame(numLines: 8)
             Spacer()
-            Text("")
+            
             HStack{
             List{Text("hello")}
             List{Text("hello")}

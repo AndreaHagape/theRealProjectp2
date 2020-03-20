@@ -39,6 +39,7 @@
 		2BF1E4D323FD76AA001A07E2 /* FPCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E4D223FD76AA001A07E2 /* FPCalculatorView.swift */; };
 		2BF1E4D523FD76BD001A07E2 /* FWCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E4D423FD76BD001A07E2 /* FWCalculatorView.swift */; };
 		2BF1E4D723FD76CD001A07E2 /* FBCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1E4D623FD76CD001A07E2 /* FBCalculatorView.swift */; };
+		36908FF324252101000049F2 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36908FF224252101000049F2 /* TextView.swift */; };
 		41F8961723EAFCCD00344047 /* VarsityPercView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F8961623EAFCCD00344047 /* VarsityPercView.swift */; };
 		41F8961923EAFCE500344047 /* VarsityWindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F8961823EAFCE500344047 /* VarsityWindView.swift */; };
 		41F8961B23EAFCF200344047 /* VarsityBrassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F8961A23EAFCF200344047 /* VarsityBrassView.swift */; };
@@ -106,6 +107,7 @@
 		2BF1E4D223FD76AA001A07E2 /* FPCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPCalculatorView.swift; sourceTree = "<group>"; };
 		2BF1E4D423FD76BD001A07E2 /* FWCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FWCalculatorView.swift; sourceTree = "<group>"; };
 		2BF1E4D623FD76CD001A07E2 /* FBCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBCalculatorView.swift; sourceTree = "<group>"; };
+		36908FF224252101000049F2 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		41F8961623EAFCCD00344047 /* VarsityPercView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarsityPercView.swift; sourceTree = "<group>"; };
 		41F8961823EAFCE500344047 /* VarsityWindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarsityWindView.swift; sourceTree = "<group>"; };
 		41F8961A23EAFCF200344047 /* VarsityBrassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarsityBrassView.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 				2BF1E4D223FD76AA001A07E2 /* FPCalculatorView.swift */,
 				2BF1E4D423FD76BD001A07E2 /* FWCalculatorView.swift */,
 				2BF1E4D623FD76CD001A07E2 /* FBCalculatorView.swift */,
+				36908FF224252101000049F2 /* TextView.swift */,
 				500D814023E85E7500EEA273 /* Assets.xcassets */,
 				500D814523E85E7500EEA273 /* LaunchScreen.storyboard */,
 				500D814823E85E7500EEA273 /* Info.plist */,
@@ -386,6 +389,7 @@
 				2BF1E4B523FD72AB001A07E2 /* VarsityFrenchHornView.swift in Sources */,
 				500D813B23E85E6000EEA273 /* AppDelegate.swift in Sources */,
 				2BF1E4BB23FD741B001A07E2 /* FreshClarinetView.swift in Sources */,
+				36908FF324252101000049F2 /* TextView.swift in Sources */,
 				2BF1E4B723FD7373001A07E2 /* FreshFluteView.swift in Sources */,
 				2BB0E9C723F58D4000CDD552 /* VarsityBasoonView.swift in Sources */,
 				500D813D23E85E6000EEA273 /* SceneDelegate.swift in Sources */,

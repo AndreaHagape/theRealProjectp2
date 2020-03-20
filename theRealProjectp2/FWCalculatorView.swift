@@ -9,13 +9,37 @@
 import SwiftUI
 
 struct FWCalculatorView: View {
+    @Binding var item: ListItem
+    @State var comment: String = ""
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            HStack{
+                TextField("", text: self.$item.name)
+                Spacer()
+                Text("")
+            }
+            
+            TextView(text: $comment).frame(numLines: 8)
+            Spacer()
+            
+            HStack{
+            List{Text("hello")}
+            List{Text("hello")}
+            List{Text("hello")}
+            List{Text("hello")}
+            List{Text("hello")}
+            List{Text("hello")}
+            List{Text("hello")}
+            List{Text("hello")}
+        }
+        }
     }
 }
 
-struct FWCalculatorView_Previews: PreviewProvider {
+/* struct FWCalculatorView_Previews: PreviewProvider {
     static var previews: some View {
         FWCalculatorView()
     }
 }
+*/

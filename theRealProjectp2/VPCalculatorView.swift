@@ -12,6 +12,7 @@ struct VPCalculatorView: View {
     @Binding var item: ListItem
     @State var comment: String = ""
     
+    
     @State var s1pitch: String = ""
     @State var s1tempo: String = ""
     @State var s1sound: String = ""
@@ -58,7 +59,7 @@ struct VPCalculatorView: View {
             Text("Score: " + String(findAverageVP()) + "%")
             Spacer()
         }
-            TextField("comments", text: $comment)
+            TextView(text: $comment).frame(numLines: 8)
             Spacer()
             HStack{
             List{Text(""); Text("Rhythm"); Text("Pitch"); Text("Tempo"); Text("Dynamic"); Text("Sound")}

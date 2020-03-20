@@ -9,7 +9,20 @@
 import SwiftUI
 
 struct FPCalculatorView: View {
+    @Binding var item: ListItem
+    @State var comment: String = ""
+    
     var body: some View {
+    VStack{
+        HStack{
+            TextField("", text: self.$item.name)
+            Spacer()
+            Text("")
+        }
+                   
+        TextView(text: $comment).frame(numLines: 8)
+        Spacer()
+        
         HStack{
             List{Text("hello")}
             List{Text("hello")}
@@ -20,11 +33,13 @@ struct FPCalculatorView: View {
             List{Text("hello")}
             List{Text("hello")}
         }
+        }
     }
 }
 
-struct FPCalculatorView_Previews: PreviewProvider {
+/*struct FPCalculatorView_Previews: PreviewProvider {
     static var previews: some View {
         FPCalculatorView()
     }
 }
+*/
