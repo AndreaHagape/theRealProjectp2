@@ -56,10 +56,10 @@ struct VPCalculatorView: View {
         HStack{
             TextField("", text: self.$item.name)
             Spacer()
-            Text("Score: " + String(findAverageVP()) + "%")
+            Text("Score: " + String(findAverageVP()) + " %")
             Spacer()
         }
-            TextView(text: $comment).frame(numLines: 8)
+            TextView(text: $comment).frame(numLines: 10)
             Spacer()
             HStack{
             List{Text(""); Text("Rhythm"); Text("Pitch"); Text("Tempo"); Text("Dynamic"); Text("Sound")}
