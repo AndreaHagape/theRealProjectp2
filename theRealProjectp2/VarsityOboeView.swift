@@ -27,7 +27,7 @@ struct VarsityOboeView: View {
                      .navigationBarTitle(Text("Varsity Oboe"))
               .navigationBarItems(trailing:
                   Button(action: {
-                      let item = ListItem(name: "Test")
+                      let item = ListItem(name: "New Student")
                       self.myList.items.append(item)
                   }) {
                       Image(systemName: "plus")

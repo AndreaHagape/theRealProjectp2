@@ -9,29 +9,34 @@
 import SwiftUI
 
 struct FreshClarinetView: View {
- @State private var usedWords = [String] ()
-        @State private var rootWord = ""
-        @State private var newWord = ""
+    @ObservedObject var myList = MyListClass()
+    
+ 
+    var body: some View {
         
-
-        var body: some View {
-            NavigationView {
-                VStack{
-                    TextField("Enter your word", text: $newWord, onCommit: addNewWord)
-                    List(usedWords, id: \.self){
-                        Text($0)
+        NavigationView {
+            List {
+                ForEach(myList.items) { item in
+                    // Pass binding to item into DetailsView
+                    NavigationLink(destination: FWCalculatorView(item: self.$myList.items[self.myList.items.firstIndex(of: item)!])) {
+                        Text(item.name)
                     }
                 }
-            .navigationBarTitle(rootWord)
-    }
-    }
-        func addNewWord(){
 
-            let answer = newWord
-            usedWords.insert(answer, at: 0)
-            newWord = ""
-            return
+            }
+                   .navigationBarTitle(Text("Freshmen Clarinet"))
+            .navigationBarItems(trailing:
+                Button(action: {
+                    let item = ListItem(name: "New Student")
+                    self.myList.items.append(item)
+                }) {
+                    Image(systemName: "plus")
+                }
+            )
+            navigationViewStyle(StackNavigationViewStyle())
+
         }
+    }
 }
 
 struct FreshClarinetView_Previews: PreviewProvider {

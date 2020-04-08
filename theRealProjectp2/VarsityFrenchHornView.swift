@@ -27,7 +27,7 @@ struct VarsityFrenchHornView: View {
                       .navigationBarTitle(Text("Varsity French Horn"))
                .navigationBarItems(trailing:
                    Button(action: {
-                       let item = ListItem(name: "Test")
+                       let item = ListItem(name: "New Student")
                        self.myList.items.append(item)
                    }) {
                        Image(systemName: "plus")
