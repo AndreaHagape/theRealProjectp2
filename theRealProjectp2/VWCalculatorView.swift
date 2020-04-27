@@ -64,6 +64,10 @@ struct VWCalculatorView: View {
                 Spacer()
                 TextField("", text: self.$item.name)
                 Spacer()
+                TextField("", text: self.$item.score)
+                Spacer()
+                TextField("", text: self.$item.band)
+                Spacer()
                 Text("Score: " + String(findAverageVW()) + " %")
                 Spacer()
             }

@@ -20,7 +20,7 @@ struct FreshPercView: View {
                    ForEach(myList.items) { item in
                        // Pass binding to item into DetailsView
                        NavigationLink(destination: FPCalculatorView(item: self.$myList.items[self.myList.items.firstIndex(of: item)!])) {
-                           Text(item.name)
+                        Text(item.name + " ; " + item.score  + " ; " + item.band)
                        }
                    }
 
@@ -28,7 +28,7 @@ struct FreshPercView: View {
                       .navigationBarTitle(Text("Freshmen Percussion"))
                .navigationBarItems(trailing:
                    Button(action: {
-                       let item = ListItem(name: "New Student")
+                       let item = ListItem(name: "New Student" , score: " Score: " , band: " Band: ")
                        self.myList.items.append(item)
                    }) {
                        Image(systemName: "plus")

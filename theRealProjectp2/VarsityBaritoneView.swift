@@ -18,8 +18,8 @@ struct VarsityBaritoneView: View {
                List {
                    ForEach(myList.items) { item in
                        // Pass binding to item into DetailsView
-                       NavigationLink(destination: VBCalculatorView(item: self.$myList.items[self.myList.items.firstIndex(of: item)!])) {
-                           Text(item.name)
+                       NavigationLink(destination: VWCalculatorView(item: self.$myList.items[self.myList.items.firstIndex(of: item)!])) {
+                        Text(item.name + " ; " + item.score  + " ; " + item.band)
                        }
                    }
 
@@ -27,7 +27,7 @@ struct VarsityBaritoneView: View {
                       .navigationBarTitle(Text("Varsity Baritone"))
                .navigationBarItems(trailing:
                    Button(action: {
-                       let item = ListItem(name: "New Student")
+                       let item = ListItem(name: "New Student" , score: " Score: " , band: " Band: ")
                        self.myList.items.append(item)
                    }) {
                        Image(systemName: "plus")

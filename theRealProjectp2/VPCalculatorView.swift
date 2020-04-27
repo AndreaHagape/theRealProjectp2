@@ -11,7 +11,7 @@ import SwiftUI
 struct VPCalculatorView: View {
     @Binding var item: ListItem
     @State var comment: String = ""
-    
+    //
     
     @State var s1pitch: String = ""
     @State var s1tempo: String = ""
@@ -56,11 +56,18 @@ struct VPCalculatorView: View {
         HStack{
             TextField("", text: self.$item.name)
             Spacer()
+            TextField("", text: self.$item.score)
+            Spacer()
+            TextField("", text: self.$item.band)
+            Spacer()
             Text("Score: " + String(findAverageVP()) + " %")
             Spacer()
         }
+            
             TextView(text: $comment).frame(numLines: 10)
             Spacer()
+            
+            
             HStack{
             List{Text(""); Text("Rhythm"); Text("Pitch"); Text("Tempo"); Text("Dynamic"); Text("Sound")}
                 
@@ -86,6 +93,7 @@ struct VPCalculatorView: View {
  
         }
     }
+   
     
     func findAverageVP() -> Int {
         var avg: Int = 0
