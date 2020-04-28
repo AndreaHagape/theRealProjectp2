@@ -19,7 +19,7 @@ struct FreshTubaView: View {
                    ForEach(myList.items) { item in
                        // Pass binding to item into DetailsView
                        NavigationLink(destination: FBCalculatorView(item: self.$myList.items[self.myList.items.firstIndex(of: item)!])) {
-                        Text(item.name + " ; " + item.score  + " ; " + item.band)
+                        Text(item.name + item.score   + item.band)
                        }
                    }
 

@@ -25,7 +25,7 @@ struct VarsityPercView: View {
                 ForEach(myList.items) { item in
                     // Pass binding to item into VPCalculatorView
                     NavigationLink(destination: VPCalculatorView(item: self.$myList.items[self.myList.items.firstIndex(of: item)!])) {
-                        Text(item.name + " ; " + item.score + " ; " + item.band)
+                        Text(item.name  + item.score  + item.band)
                     }
                 }
 
