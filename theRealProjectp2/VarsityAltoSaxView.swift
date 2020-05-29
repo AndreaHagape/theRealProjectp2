@@ -41,7 +41,7 @@ struct VarsityAltoSaxView: View {
                   .navigationBarTitle(Text("Varsity Alto Saxophone"))
            .navigationBarItems(trailing:
                Button(action: {
-                   let item = ListItem(name: "New Student" , score: " Score: " , band: " Band: ")
+                   let item = ListItem(name: "New Student" , score: " \t Score: " , band: " \t Band: ")
                    self.myList.items.append(item)
                }) {
                    Image(systemName: "plus")
