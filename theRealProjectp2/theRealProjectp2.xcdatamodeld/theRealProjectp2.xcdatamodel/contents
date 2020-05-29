@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E266" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="VPStudent" representedClassName="VPStudent" syncable="YES" codeGenerationType="class">
+        <attribute name="band" optional="YES" attributeType="String"/>
+        <attribute name="comment" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="medynamic" optional="YES" attributeType="String"/>
+        <attribute name="mepitch" optional="YES" attributeType="String"/>
+        <attribute name="merhythm" optional="YES" attributeType="String"/>
+        <attribute name="mesound" optional="YES" attributeType="String"/>
+        <attribute name="metempo" optional="YES" attributeType="String"/>
+        <attribute name="msrpitch" optional="YES" attributeType="String"/>
+        <attribute name="msrrhythm" optional="YES" attributeType="String"/>
+        <attribute name="msrsound" optional="YES" attributeType="String"/>
+        <attribute name="msrtempo" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String" defaultValueString=""/>
+        <attribute name="s1pitch" optional="YES" attributeType="String"/>
+        <attribute name="s1sound" optional="YES" attributeType="String"/>
+        <attribute name="s1tempo" optional="YES" attributeType="String"/>
+        <attribute name="s2pitch" optional="YES" attributeType="String"/>
+        <attribute name="s2sound" optional="YES" attributeType="String"/>
+        <attribute name="s2tempo" optional="YES" attributeType="String"/>
+        <attribute name="s3pitch" optional="YES" attributeType="String"/>
+        <attribute name="s3sound" optional="YES" attributeType="String"/>
+        <attribute name="s3tempo" optional="YES" attributeType="String"/>
+        <attribute name="score" optional="YES" attributeType="String"/>
+        <attribute name="sedynamic" optional="YES" attributeType="String"/>
+        <attribute name="serhythm" optional="YES" attributeType="String"/>
+        <attribute name="sesound" optional="YES" attributeType="String"/>
+        <attribute name="setempo" optional="YES" attributeType="String"/>
+        <attribute name="ssrdynamic" optional="YES" attributeType="String"/>
+        <attribute name="ssrrhythm" optional="YES" attributeType="String"/>
+        <attribute name="ssrsound" optional="YES" attributeType="String"/>
+        <attribute name="ssrtempo" optional="YES" attributeType="String"/>
+        <attribute name="tedynamic" optional="YES" attributeType="String"/>
+        <attribute name="terhythm" optional="YES" attributeType="String"/>
+        <attribute name="tesound" optional="YES" attributeType="String"/>
+        <attribute name="tetempo" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="VPStudent" positionX="-54" positionY="-9" width="128" height="568"/>
+    </elements>
+</model>

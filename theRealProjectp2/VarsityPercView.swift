@@ -16,16 +16,20 @@ class MyListClass: ObservableObject {
 struct VarsityPercView: View {
  
     @ObservedObject var myList = MyListClass()
-    
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(entity: VPStudent.entity(), sortDescriptors: []) var students: FetchedResults<VPStudent>
  
     var body: some View {
+      
         
         NavigationView {
             List {
-                ForEach(myList.items) { item in
+                ForEach(students, id: \.id) {
+                    student in
                     // Pass binding to item into VPCalculatorView
-                    NavigationLink(destination: VPCalculatorView(item: self.$myList.items[self.myList.items.firstIndex(of: item)!])) {
-                        Text(item.name  + item.score  + item.band)
+                    NavigationLink(destination: VPCalculatorView(
+                        student: student)) {
+                        Text(student.name  + student.score  + student.band)
                     }
                 }
 
@@ -33,13 +37,17 @@ struct VarsityPercView: View {
                    .navigationBarTitle(Text("Varsity Percussion"))
             .navigationBarItems(trailing:
                 Button(action: {
-                    let item = ListItem(name: "New Student ", score: " Score: " , band: " Band: ")
-                    self.myList.items.append(item)
+                    let student = Student(context: self.moc)
+                    student.id = UUID()
+                    student.name = "New Student"
+                    student.score = " Score: "
+                    student.band = " Band: "
+                    try? self.moc.save()
                 }) {
                     Image(systemName: "plus")
                 }
             )
-            navigationViewStyle(StackNavigationViewStyle())
+                .navigationViewStyle(StackNavigationViewStyle())
 
         }
     }

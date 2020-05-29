@@ -7,11 +7,16 @@
 //
  
 import SwiftUI
+import CoreData
  
 struct VPCalculatorView: View {
-    @Binding var item: ListItem
-    @State var comment: String = ""
-    //
+    @Environment(\.managedObjectContext) var moc
+     @Binding var student: VPStudent
+   
+    @State var name: String
+    @State var score: String
+    @State var band: String
+    @State var comment: String
     
     @State var s1pitch: String = ""
     @State var s1tempo: String = ""
@@ -50,25 +55,27 @@ struct VPCalculatorView: View {
     @State var msrpitch: String = ""
     @State var msrtempo: String = ""
     @State var msrsound: String = ""
+    
  
     var body: some View {
         VStack{
         HStack{
-            TextField("", text: self.$item.name)
+            TextField("", text: self.$name )
             Spacer()
-            TextField("", text: self.$item.score)
+            TextField("", text: self.$score)
             Spacer()
-            TextField("", text: self.$item.band)
+            TextField("", text: self.$band)
             Spacer()
             Text("Score: " + String(findAverageVP()) + " %")
             Spacer()
         }
             
-            TextView(text: $comment).frame(numLines: 10)
+            TextView(text: self.$comment).frame(numLines: 10)
             Spacer()
             
             
             HStack{
+                
             List{Text(""); Text("Rhythm"); Text("Pitch"); Text("Tempo"); Text("Dynamic"); Text("Sound")}
                 
             List{Text("Scale 1"); Text("n/a"); TextField("/20", text: $s1pitch); TextField("/20", text: $s1tempo); Text("n/a"); TextField("/20", text: $s1sound)}
@@ -86,7 +93,55 @@ struct VPCalculatorView: View {
             List{Text("Snare Sight Read"); TextField("/20", text: $ssrrhythm); Text("n/a"); TextField("/20", text: $ssrtempo); TextField("/20", text: $ssrdynamic); TextField("/20", text: $ssrsound);}
                 
             List{Text("Mallet Sight Read"); TextField("/20", text: $msrrhythm); TextField("/20", text: $msrpitch); TextField("/20", text: $msrtempo); Text("n/a"); TextField("/20", text: $msrsound);}
-            
+                
+            Button ("Save") {
+                let student = VPStudent(context: self.moc)
+                student.id = UUID()
+                student.name = "\(self.name)"
+                student.score = "\(self.score)"
+                student.band = "\(self.band)"
+                student.comment = "\(self.comment)"
+                
+                student.s1pitch = "\(self.s1pitch)"
+                student.s1tempo = "\(self.s1tempo)"
+                student.s1sound = "\(self.s1sound)"
+                
+                student.s2pitch = "\(self.s2pitch)"
+                student.s2tempo = "\(self.s2tempo)"
+                student.s2sound = "\(self.s2sound)"
+                
+                student.s3pitch = "\(self.s3pitch)"
+                student.s3tempo = "\(self.s3tempo)"
+                student.s3sound = "\(self.s3sound)"
+                
+                student.serhythm = "\(self.serhythm)"
+                student.setempo = "\(self.setempo)"
+                student.sedynamic = "\(self.sedynamic)"
+                student.sesound = "\(self.sesound)"
+                
+                student.merhythm = "\(self.merhythm)"
+                student.mepitch = "\(self.mepitch)"
+                student.metempo = "\(self.metempo)"
+                student.medynamic = "\(self.medynamic)"
+                student.mesound = "\(self.mesound)"
+                
+                student.terhythm = "\(self.terhythm)"
+                student.tetempo = "\(self.tetempo)"
+                student.tedynamic = "\(self.tedynamic)"
+                student.tesound = "\(self.tesound)"
+                
+                student.ssrrhythm = "\(self.ssrrhythm)"
+                student.ssrtempo = "\(self.ssrtempo)"
+                student.ssrdynamic = "\(self.ssrdynamic)"
+                student.ssrsound = "\(self.ssrsound)"
+                
+                student.msrrhythm = "\(self.msrrhythm)"
+                student.msrpitch = "\(self.msrpitch)"
+                student.msrtempo = "\(self.msrtempo)"
+                student.msrsound = "\(self.msrsound)"
+                
+                try? self.moc.save()
+                }
         }
             Spacer()
             
@@ -94,8 +149,13 @@ struct VPCalculatorView: View {
         }
     }
    
-    
+   
     func findAverageVP() -> Int {
+        //let name: String = self.student.name ?? ""
+        //let score: String = self.student.score ?? ""
+        //let band: String = self.student.band ?? ""
+        //let comment: String = self.student.comment ?? ""
+        
         var avg: Int = 0
         let ints1pitch: Int = Int(s1pitch) ?? 0
          let ints1tempo: Int = Int(s1tempo) ?? 0
@@ -137,13 +197,11 @@ struct VPCalculatorView: View {
         
         let sum = ints1pitch + ints1sound + ints1tempo + ints2pitch + ints2tempo + ints2sound + ints3pitch + ints3tempo + ints3sound + intserhythm + intsetempo + intsedynamic + intsesound + intmerhythm + intmepitch + intmetempo + intmedynamic + intmesound + intterhythm + inttetempo + inttedynamic + inttesound + intssrrhythm + intssrtempo + intssrdynamic + intssrsound + intmsrrhythm + intmsrpitch + intmsrtempo + intmsrsound
         avg = Int((Double(sum)/(30.0 * 20.0)) * 100.0)
-        
+            
         return avg
     }
-
 }
-
- 
+   
  
 /*struct VPCalculatorView_Previews: PreviewProvider {
     static var previews: some View {

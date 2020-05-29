@@ -54,6 +54,7 @@
 		500D814723E85E7500EEA273 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 500D814523E85E7500EEA273 /* LaunchScreen.storyboard */; };
 		500D815223E85E7500EEA273 /* theRealProjectp2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500D815123E85E7500EEA273 /* theRealProjectp2Tests.swift */; };
 		500D815D23E85E7500EEA273 /* theRealProjectp2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500D815C23E85E7500EEA273 /* theRealProjectp2UITests.swift */; };
+		9CA2490E2480759800E7C4E9 /* theRealProjectp2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9CA2490C2480759800E7C4E9 /* theRealProjectp2.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +129,7 @@
 		500D815823E85E7500EEA273 /* theRealProjectp2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = theRealProjectp2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		500D815C23E85E7500EEA273 /* theRealProjectp2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = theRealProjectp2UITests.swift; sourceTree = "<group>"; };
 		500D815E23E85E7500EEA273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CA2490D2480759800E7C4E9 /* theRealProjectp2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = theRealProjectp2.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				500D813A23E85E6000EEA273 /* AppDelegate.swift */,
+				9CA2490C2480759800E7C4E9 /* theRealProjectp2.xcdatamodeld */,
+				2B1D039B23FC27AD002E540B /* VPCalculatorView.swift */,
 				500D813C23E85E6000EEA273 /* SceneDelegate.swift */,
 				2B53C41823EC54AA007A68B2 /* StudentRowView.swift */,
 				2B53C41723EC5339007A68B2 /* StudentData.json */,
@@ -214,7 +218,6 @@
 				2BF1E4C823FD7587001A07E2 /* FreshFrenchHornView.swift */,
 				2BF1E4CA23FD759C001A07E2 /* FreshTubaView.swift */,
 				2BF1E4CC23FD75AA001A07E2 /* FreshBaritoneView.swift */,
-				2B1D039B23FC27AD002E540B /* VPCalculatorView.swift */,
 				2BF1E4CE23FD7687001A07E2 /* VWCalculatorView.swift */,
 				2BF1E4D023FD7697001A07E2 /* VBCalculatorView.swift */,
 				2BF1E4D223FD76AA001A07E2 /* FPCalculatorView.swift */,
@@ -421,6 +424,7 @@
 				2BF1E4BF23FD7441001A07E2 /* FreshBasoonView.swift in Sources */,
 				500D813F23E85E6000EEA273 /* ContentView.swift in Sources */,
 				41F8961B23EAFCF200344047 /* VarsityBrassView.swift in Sources */,
+				9CA2490E2480759800E7C4E9 /* theRealProjectp2.xcdatamodeld in Sources */,
 				41F8961923EAFCE500344047 /* VarsityWindView.swift in Sources */,
 				2BF1E4CF23FD7687001A07E2 /* VWCalculatorView.swift in Sources */,
 				2B1D039C23FC27AD002E540B /* VPCalculatorView.swift in Sources */,
@@ -752,6 +756,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9CA2490C2480759800E7C4E9 /* theRealProjectp2.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9CA2490D2480759800E7C4E9 /* theRealProjectp2.xcdatamodel */,
+			);
+			currentVersion = 9CA2490D2480759800E7C4E9 /* theRealProjectp2.xcdatamodel */;
+			path = theRealProjectp2.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 500D812F23E85E6000EEA273 /* Project object */;
 }
