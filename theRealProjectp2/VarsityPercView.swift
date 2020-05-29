@@ -43,6 +43,8 @@ struct VarsityPercView: View {
                     student.score = " Score: "
                     student.band = " Band: "
                     try? self.moc.save()
+                    let item = ListItem(name: " New Student ", score: " \t Score: " , band: " \t Band: ")
+                    self.myList.items.append(item)
                 }) {
                     Image(systemName: "plus")
                 }
